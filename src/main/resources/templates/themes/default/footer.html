@@ -35,15 +35,14 @@
             <div class="meta-item meta-copyright">
                 <div class="meta-copyright-info">
                     <div class="info-text">
-                        <a href="http://www.54tianzhisheng.cn" target="_blank" style="display: block;margin: 0 auto;" class="info-logo">
+                        <a th:href="${commons.site_url('/')}" target="_blank" style="display: block;margin: 0 auto;" class="info-logo">
                             <img style="display: block;margin: 0 auto;" th:src="@{/user/img/logo.png}" th:alt="${commons.site_title()}"/>
                         </a>
                         <br/>
-                        <p>&copy; 版权所有 <a href="https://github.com/zhisheng17/blog" target="_blank"
-                                         rel="nofollow">My Blog</a> 保留一切权利
+                        <p>Welcome to <a href="https://github.com/SherLzp" target="_blank"
+                                         rel="nofollow">Sher's Home</a>
                         </p>
                         <br/>
-                        <p>赣ICP备16004176号</p>
                     </div>
                 </div>
             </div>
@@ -54,7 +53,7 @@
 
 <th:block th:if="${is_post}">
     <div id="directory-content" class="directory-content">
-        <div id="directory"></div>
+        <div id="directory" style="width:350px; height:600px; overflow:auto;"></div>
     </div>
     <script>
         /*<![CDATA[*/
@@ -204,5 +203,6 @@
     InstantClick.init('mousedown');
     /*]]>*/
 </script>
+<script type='text/javascript' src='//api.dujin.org/js/aixintexiao.js'></script>
 </body>
 </html>
